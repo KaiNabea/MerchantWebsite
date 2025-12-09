@@ -1,5 +1,4 @@
 from django.db import models
-<<<<<<< HEAD
 from django.contrib.auth.models import User
 from decimal import Decimal
 
@@ -47,7 +46,3 @@ class CartItem(models.Model):
     
     def get_total(self):
         return self.product.price * self.quantity
-=======
-
-# Create your models here.
->>>>>>> a412d636ba4b0367d9a976319838e4e6159e37af

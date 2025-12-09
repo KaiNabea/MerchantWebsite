@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 from django.shortcuts import render, redirect, get_object_or_404
 from django.contrib import messages
 from .models import Products, Cart, CartItem
@@ -72,8 +71,3 @@ def remove_from_cart(request, item_id):
     cart_item.delete()
     messages.success(request, f'{product_name} removed from cart.')
     return redirect('view_cart')
-=======
-from django.shortcuts import render
-
-# Create your views here.
->>>>>>> a412d636ba4b0367d9a976319838e4e6159e37af
