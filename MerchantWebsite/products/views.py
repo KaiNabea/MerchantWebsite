@@ -74,7 +74,7 @@ def update_cart_item(request, item_id):
         try:
             quantity = int(request.POST.get('quantity', 1))
             if quantity > 0:
-                cart_item.quantity = quantity
+                cart_item.quantity = quantitya
                 cart_item.full_clean()
                 cart_item.save()
                 messages.success(request, "Cart updated.")
